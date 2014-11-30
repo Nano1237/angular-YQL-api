@@ -3,7 +3,7 @@ angular.module('angular-YQL-api', [])
         /**
          * @description The Api Url of the YQL-api
          */
-        .constant('angular-YQL-api.api.apiUrl', 'https://query.yahooapis.com/v1/public/yql?q=')
+        .constant('angular-YQL-api.apiUrl', 'https://query.yahooapis.com/v1/public/yql?q=')
 
         /**
          * 
@@ -14,7 +14,7 @@ angular.module('angular-YQL-api', [])
          * @returns {unresolved}
          */
         .factory('angular-YQL-api.api', [
-            'angular-YQL-api.api.apiUrl',
+            'angular-YQL-api.apiUrl',
             '$http',
             '$q',
             function(apiUrl, $http, $q) {
