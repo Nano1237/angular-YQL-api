@@ -8,13 +8,13 @@ The solution is the YQL (Yahoo Query Language) api.
 ###Usage
 
 - Set the `angular-YQL-api` as dependency
-```
+```javascript
 angular.module('myApp', [
     'angular-YQL-api'
 ]);
 ```
 - Include the `YQL` factory
-```
+```javascript
 myApp.controller('ExampleCtrl',[
     'YQL',
     function(YQL) {
@@ -23,7 +23,7 @@ myApp.controller('ExampleCtrl',[
 ]);
 ```
 - Get any Website you like
-```
+```javascript
 YQL.html('https://www.google.com/').then(function(a){
     console.log('google: ',a);
 });
